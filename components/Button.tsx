@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { IconType } from "react-icons";
+import { RiLoader2Fill } from "react-icons/ri";
 
 type ButtonProps = {
   type: "button" | "submit";
@@ -7,6 +8,7 @@ type ButtonProps = {
   icon?: ReactNode;
   onClick?: () => void;
   className: string;
+  pending?: boolean;
 };
 
 export default function Button({
@@ -15,10 +17,16 @@ export default function Button({
   icon,
   onClick,
   className,
+  pending,
 }: ButtonProps) {
   return (
-    <button type={type} onClick={onClick} className={className}>
-      {text}
+    <button
+      type={type}
+      onClick={onClick}
+      className={className}
+      disabled={pending}
+    >
+      {pending ? <RiLoader2Fill className="animate-spin" /> : text}
       {icon}
     </button>
   );

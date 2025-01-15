@@ -1,13 +1,18 @@
-import React, { Children, ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { createTodo } from "@/libs/actions/addtodo.action";
 import NewTodo from "./NewTodo";
 
 type ModelProps = {
   openModel: boolean;
   setOpenModel: (openModel: boolean) => boolean | void;
+  children: ReactNode;
 };
 
-export default function Model({ openModel, setOpenModel }: ModelProps) {
+export default function Model({
+  openModel,
+  setOpenModel,
+  children,
+}: ModelProps) {
   return (
     <div
       className={`${
@@ -21,7 +26,7 @@ export default function Model({ openModel, setOpenModel }: ModelProps) {
         >
           X
         </button>
-        <NewTodo setOpenModel={setOpenModel} />
+        {children}
       </div>
     </div>
   );

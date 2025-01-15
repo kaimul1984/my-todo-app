@@ -22,7 +22,8 @@ export default function Input({
       placeholder={placeholder}
       value={value}
       defaultValue={defaultValue}
-      className="lg:w-full border-[.5px] px-2 lg:px-4 py-2 rounded-md"
+      required
+      className="w-full border-[.5px] border-gray-400 px-2 lg:px-4 py-2 rounded-md"
     />
   );
 }
