@@ -44,7 +44,7 @@ export default function EditTodo({ todo }: { todo: Todo }) {
           todo.completed
             ? "text-gray-300 pointer-events-none"
             : " hover:bg-slate-500 hover:text-white"
-        } p-2 rounded-md bg-slate-100`}
+        } p-2 rounded-md bg-slate-100 transition-all duratio-100 ease-linear`}
         icon={<FaRegEdit size={15} />}
         onClick={handleEdit}
       />

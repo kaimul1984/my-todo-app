@@ -23,7 +23,7 @@ export default function DeleteTodo({ todo }: { todo: Todo }) {
     <>
       <Button
         type="button"
-        className="p-2  bg-slate-100 hover:bg-slate-500 rounded-md"
+        className="p-2  bg-slate-100 hover:bg-slate-500 rounded-md transition-all duration-100"
         icon={<FaTrash size={15} color="red" />}
         onClick={handleEdit}
       />

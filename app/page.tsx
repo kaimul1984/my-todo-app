@@ -15,7 +15,16 @@ export default async function Home() {
           <h1 className=" text-center  text-black ">My Todo App</h1>
         </div>
         <AddTodo />
-        <TodoList todos={todos} />
+        {todos.length > 0 ? (
+          <TodoList todos={todos} />
+        ) : (
+          <div className="bg-slate-200 p-6 w-full rounded-md">
+            <p className="text-center">
+              No Todo found. <br />
+              Click Add todo button to add some todo.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
