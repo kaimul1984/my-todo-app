@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import { IconType } from "react-icons";
 import { RiLoader2Fill } from "react-icons/ri";
 
 type ButtonProps = {

@@ -1,6 +1,4 @@
 import React, { ReactNode } from "react";
-import { createTodo } from "@/libs/actions/addtodo.action";
-import NewTodo from "./NewTodo";
 
 type ModelProps = {
   openModel: boolean;

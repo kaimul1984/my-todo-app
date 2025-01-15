@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Model from "./Model";
 import { FaPlus } from "react-icons/fa6";
 import Button from "./Button";
 import NewTodo from "./NewTodo";

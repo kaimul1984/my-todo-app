@@ -9,7 +9,6 @@ import Form from "./Form";
 
 import Model from "./Model";
 import { Todo } from "@/types";
-import { RiLoader2Fill } from "react-icons/ri";
 
 const initialState = {
   message: "",

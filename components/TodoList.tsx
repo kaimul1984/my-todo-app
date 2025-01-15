@@ -1,7 +1,6 @@
 import EditTodo from "./EditTodo";
 import DeleteTodo from "./DeleteTodo";
 import { Todo } from "@/types";
-import Input from "./Input";
 import ChangeStatus from "./ChangeStatus";
 
 type Todos = {
